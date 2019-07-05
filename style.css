@@ -1,0 +1,103 @@
+body {
+    margin: 0;  
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+* {    
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,p,ul,li {
+    margin: 0;
+}
+
+.heading-one {
+    font-size: 58px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.heading-two {    
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 70px; 
+}
+
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: #5d8fb4;
+    background-image: url('./img/bg.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+   
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+    .nav {
+        width: 740px;        
+        /* background-color: #000; */
+        margin-top: 75px;
+        margin-bottom: 95px; 
+        cursor: pointer;                      
+
+        display: flex;
+        justify-content: space-between;
+    }
+        .nav__link { 
+            font-size: 36px;
+            font-weight: 400;           
+            color: #fff;
+            text-decoration: none;                        
+        }
+    .foto-wrapper {        
+        width: 250px;
+        height: 250px;
+        margin-bottom: 15px;
+        background: #f5d41c;
+
+        border-radius: 50%; /* делаем круг под фото */
+        overflow: hidden;   /* убираем фото внутрь блока */       
+    }
+        .foto-img {            
+            max-width: 100%; /* ничего не меняет(МОЖНО без него)*/
+            height: auto;    /* ничего не меняет(МОЖНО без него)*/
+        }
+    
+    .social-wrapper {
+        width: 270px;
+        /* background-color: #171717; */        
+        
+        display: flex;
+        justify-content: space-between;        
+    }
+        .social-icon {
+            font-size: 32px;
+            font-weight: 400;
+            color: #000;
+            background-color: #fff;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            cursor: pointer;            
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;                        
+        }
+            .social-icon .fa-vk {
+                color: #548bb7;                
+            }
+            .social-icon .fa-linkedin-in {
+                color: #056dc3;
+            }
+            
+
+        
+        
+
