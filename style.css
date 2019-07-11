@@ -1,4 +1,5 @@
 body {
+    width: 1920px;
     margin: 0;  
     font-family: 'PT Sans Narrow', sans-serif;
 }
@@ -11,91 +12,148 @@ h1,h2,h3,h4,p,ul,li {
     margin: 0;
 }
 
-.heading-one {
-    font-size: 58px;
-    font-weight: 700;
-    color: #fff;
-}
-
-.heading-two {    
-    font-size: 36px;
-    font-weight: 400;
-    color: #fff;
-    margin-bottom: 70px; 
-}
-
-
-.header {
-    width: 100%;
-    height: 100vh;
-    background-color: #5d8fb4;
-    background-image: url('./img/bg.jpg');
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-   
-    display: flex;
-    flex-direction: column;    
-    align-items: center;
-}
-    .nav {
-        width: 740px;        
-        /* background-color: #000; */
-        margin-top: 75px;
-        margin-bottom: 95px; 
-        cursor: pointer;                      
-
-        display: flex;
-        justify-content: space-between;
-    }
-        .nav__link { 
-            font-size: 36px;
-            font-weight: 400;           
-            color: #fff;
-            text-decoration: none;                        
-        }
-    .foto-wrapper {        
-        width: 250px;
-        height: 250px;
-        margin-bottom: 15px;
-        background: #f5d41c;
-
-        border-radius: 50%; /* делаем круг под фото */
-        overflow: hidden;   /* убираем фото внутрь блока */       
-    }
-        .foto-img {            
-            max-width: 100%; /* ничего не меняет(МОЖНО без него)*/
-            height: auto;    /* ничего не меняет(МОЖНО без него)*/
-        }
+    .header {
+        width: 100%;
+        height: 100vh;
+        /* margin-bottom: 100px; */
+        background-color: #5d8fb4;
+        background-image: url('./img/bg.jpg');
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
     
-    .social-wrapper {
-        width: 270px;
-        /* background-color: #171717; */        
-        
         display: flex;
-        justify-content: space-between;        
+        flex-direction: column;    
+        align-items: center;
     }
-        .social-icon {
-            font-size: 32px;
-            font-weight: 400;
-            color: #000;
-            background-color: #fff;
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            cursor: pointer;            
+        .nav {
+            width: 740px;        
+            /* background-color: #000; */
+            margin-top: 75px;
+            margin-bottom: 95px; 
+            cursor: pointer;                      
 
             display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;                        
+            justify-content: space-between;
         }
-            .social-icon .fa-vk {
-                color: #548bb7;                
+            .nav__link { 
+                font-size: 36px;
+                font-weight: 400;           
+                color: #fff;
+                text-decoration: none;                        
             }
-            .social-icon .fa-linkedin-in {
-                color: #056dc3;
+        .foto-wrapper {        
+            width: 250px;
+            height: 250px;
+            margin-bottom: 15px;
+            background: #f5d41c;
+
+            border-radius: 50%; /* делаем круг под фото */
+            overflow: hidden;   /* убираем фото внутрь блока */       
+        }
+            .foto-img {            
+                max-width: 100%; /* ничего не меняет(МОЖНО без него)*/
+                height: auto;    /* ничего не меняет(МОЖНО без него)*/
             }
+        .heading-one {
+            font-size: 58px;
+            font-weight: 700;
+            color: #fff;
+        }
+        
+        .heading-two {    
+            font-size: 36px;
+            font-weight: 400;
+            color: #fff;
+            margin-bottom: 70px; 
+        }
+        .social-wrapper {
+            width: 270px;
+            /* background-color: #171717; */        
+            
+            display: flex;
+            justify-content: space-between;        
+        }
+            .social-icon {
+                font-size: 32px;
+                font-weight: 400;
+                color: #000;
+                background-color: #fff;
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                cursor: pointer;            
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;                        
+            }
+                .social-icon .fa-vk {
+                    color: #548bb7;                
+                }
+                .social-icon .fa-linkedin-in {
+                    color: #056dc3;
+                }
+
+    .about {
+        width: 100%;
+        padding-top: 70px;
+        padding-bottom: 110px;
+        display: flex;
+        justify-content: center;
+    }
+        .container {
+            width: 1170px;
+            display: flex;
+            justify-content: space-between;
+        }
+            .foto-about {
+                width: 470px;
+                height: 470px;
+                background-color: #5d8fb4;
+                /* background-image: url('./img/'); */
+                background-repeat: no-repeat;
+                background-position: center; 
+            }
+                .foto-about__img {
+                     
+                }
+            .about-text {
+                width: 570px;
+            }
+                .about-text__title {
+                    /* line-height: 0; */
+                    color: #17609e;
+                    font-size: 58px;
+                    font-weight: 700;
+                    margin-top: -18px;
+                    margin-bottom: 12px;
+                    margin-left: -2px;
+                }
+                .about-text__descr {
+                    color: #080808;
+                    line-height: 32px;
+                    font-size: 22px;
+                    font-weight: 400;
+                    margin-bottom: 45px;
+                }
+                .about-list {
+                    color: #080808;
+                    font-size: 22px;
+                    font-weight: 700;
+                    list-style-type: none;
+                    padding-left: 0;
+                    margin-top: -18px; 
+                }
+                    .about-list p {
+                        margin-bottom: 3px;
+                    }
+                    li {
+                        font-weight: 400;
+                        line-height: 32px;
+                    }
+                
             
 
         
