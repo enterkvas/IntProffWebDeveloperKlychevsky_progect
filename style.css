@@ -55,18 +55,20 @@ h1,h2,h3,h4,p,ul,li {
                 max-width: 100%; /* ничего не меняет(МОЖНО без него)*/
                 height: auto;    /* ничего не меняет(МОЖНО без него)*/
             }
-        .heading-one {
-            font-size: 58px;
-            font-weight: 700;
-            color: #fff;
-        }
-        
-        .heading-two {    
-            font-size: 36px;
-            font-weight: 400;
-            color: #fff;
-            margin-bottom: 70px; 
-        }
+        .heading-block {
+            margin-bottom: 70px;
+        }            
+            .heading-block__one {
+                font-size: 58px;
+                font-weight: 700;
+                color: #fff;
+            }
+            
+            .heading-block__two {    
+                font-size: 36px;
+                font-weight: 400;
+                color: #fff;                 
+            }
         .social-wrapper {
             width: 270px;
             /* background-color: #171717; */        
@@ -154,7 +156,30 @@ h1,h2,h3,h4,p,ul,li {
                         line-height: 32px;
                     }
                 
-            
+    .portfolio {
+        background-color: grey;
+        width: 100%;
+        height: 860px;
+
+        display: flex;
+        justify-content: center;
+    }
+        .container {
+        }
+            .heading-block {
+                flex: 0 0 auto;
+            }
+
+            .portfolio-block {
+            }
+                .portfolio-block-item {
+                }
+                    .portfolio-block-item__img {
+                    }
+                    .portfolio-block__title {
+                    }
+                    .portfolio-block__descr {
+                    }        
 
         
         
